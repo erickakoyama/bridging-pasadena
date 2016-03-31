@@ -1,0 +1,58 @@
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Filtering JSON Data with Angular</title>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="lib/angular/dirPagination.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <script   src="https://code.jquery.com/jquery-1.11.3.min.js"   integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g="   crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+
+  </header>
+  <div class="container" ng-controller="myController">
+  <div class="search">
+      <h1 class="text-center">Online Resource Directory</h1>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="input-group search-input-group">
+            <input ng-model="searchText" class="form-control center-block" placeholder="Search for Resources..." autofocus>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+  </div>
+  <div class="search-results">
+    <h1>Results</h1>
+    <ul>
+      <li class="service-item" dir-paginate="service in services | filter:searchText | itemsPerPage:1">
+        <h3>{{service.name}}</h3>
+        <div>
+          <p><strong>Address: </strong>{{service.address}}</p>
+          <p><strong>Phone: </strong>{{service.phone}}</p>
+          <p><strong>Hours: </strong>{{service.hours}}</p>
+          <p><strong>Description: </strong>{{service.description}}</p>
+          <p><strong>Location Type: </strong>{{service.type}}</p>
+          <p><strong>Keywords: </strong>{{service.keywords}}</p>
+        </div>
+      </li>
+    </ul>
+    <dir-pagination-controls
+       max-size="5"
+       direction-links="true"
+       boundary-links="true" >
+    </dir-pagination-controls>
+  </div>
+  </div>
+</body>
+</html>
