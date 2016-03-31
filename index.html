@@ -35,7 +35,7 @@
   <div class="search-results">
     <h1>Results</h1>
     <ul>
-      <li class="service-item" dir-paginate="service in services | filter:searchText | itemsPerPage:1">
+      <li class="service-item" dir-paginate="service in services | filter:searchText | itemsPerPage:5">
         <h3>{{service.name}}</h3>
         <div>
           <p><strong>Address: </strong>{{service.address}}</p>
@@ -48,7 +48,7 @@
       </li>
     </ul>
     <dir-pagination-controls
-       max-size="5"
+       max-size="6"
        direction-links="true"
        boundary-links="true" >
     </dir-pagination-controls>
