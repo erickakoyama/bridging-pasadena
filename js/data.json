@@ -1,0 +1,28 @@
+[{
+    "name": "Ability First",
+    "address": "1300 E. Green St.",
+    "hours": "8:00 pm to 5:00 pm",
+    "phone": "626-396-1010",
+    "type": "Apartment/Center",
+    "keywords": "housing, physical disabilities",
+    "description": "Housing for people with Disabilities (physical)"
+  },
+  {
+    "name": "Ability First Housing - Lawrence L. Frank Center",
+    "address": "201 S. Kinneola St.",
+    "hours": "8:00 pm to 5:00 pm",
+    "phone": "818-241-3888",
+    "type": "Apartment",
+    "keywords": "housing, physical disabilities",
+    "description": "Housing for people with Disabilities (physical)"
+  },
+  {
+    "name": "Action Family Counseling - Pasadena",
+    "address": "3813 E. Colorado Blvd",
+    "hours": "8:00 pm to 5:00 pm",
+    "phone": "8(626) 792-8106",
+    "alternative-phone": "(626) 792-8206",
+    "type": "Store Front",
+    "keywords": "mental health, family support, families support, youth",
+    "description": "ADOLESCENTS*DRUG/ALCOHOL TESTING*ADOLESCENT/YOUTH COUNSELING*DUAL DIAGNOSIS*YOUNG ADULTS*DRUG/ALCOHOL TESTING*FAMILY COUNSELING*FAMILIES*SUPPORT GROUPS*SUBSTANCE ABUSE ISSUES*SUPPORT GROUPS*PARENT COUNSELING*DRUG ABUSE COUNSELING*ADOLESCENTS*ALCOHOLISM COUNSELING*ADOLESCENTS*Intensive Outpatient (IOP) services and half and full day Partial Hospitalization and 24 hour Residential Care"
+  }]

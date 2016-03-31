@@ -1,0 +1,18 @@
+ol,ul {
+  list-style: none;
+}
+
+header {
+  height: 450px;
+  background: url(../img/header.png) center center no-repeat;
+  background-size: cover;
+}
+
+.search-input-group {
+  width: 100%;
+}
+
+.search-input-group .form-control {
+  height: 50px;
+  padding: 5px;
+}
