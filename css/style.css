@@ -9,6 +9,10 @@ ol,ul {
   padding: 0;
 }
 
+.navbar li a {
+  text-transform: uppercase;
+}
+
 header {
   height: 450px;
   background: url(../img/header.png) center center no-repeat;
