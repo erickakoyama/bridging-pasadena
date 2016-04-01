@@ -9,6 +9,14 @@ ol,ul {
   padding: 0;
 }
 
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
 .navbar li a {
   text-transform: uppercase;
 }
@@ -26,4 +34,28 @@ header {
 .search-input-group .form-control {
   height: 50px;
   padding: 5px;
+}
+
+.search-results {
+  background: #ecedee;
+  margin-top: 10px;
+}
+
+.search-results > h3 {
+  padding: 10px 0;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+  background: #5D616C;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.service-item {
+  padding: 10px;
+  border-bottom: 5px solid #fff;
+}
+
+.pagination-container {
+  background: #fff;
 }
