@@ -27,6 +27,10 @@ header {
   background-size: cover;
 }
 
+.navbar-inverse {
+  border-radius: 0;
+}
+
 .search-input-group {
   width: 100%;
 }
