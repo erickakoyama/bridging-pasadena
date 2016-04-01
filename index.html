@@ -61,14 +61,14 @@
     <h1>Results</h1>
     <ul>
       <li class="service-item" dir-paginate="service in services | filter:searchText | itemsPerPage:5">
-        <h3>{{service.name}}</h3>
+        <h3>{{service.NAME}}</h3>
         <div>
-          <p><strong>Address: </strong>{{service.address}}</p>
-          <p><strong>Phone: </strong>{{service.phone}}</p>
-          <p><strong>Hours: </strong>{{service.hours}}</p>
-          <p><strong>Description: </strong>{{service.description}}</p>
-          <p><strong>Location Type: </strong>{{service.type}}</p>
-          <p><strong>Keywords: </strong>{{service.keywords}}</p>
+          <p><strong>Address: </strong>{{service.ADDRESS}}</p>
+          <p><strong>Phone: </strong>{{service.PHONE}}</p>
+          <p><strong>Hours: </strong>{{service.HOURS}}</p>
+          <p><strong>Description: </strong>{{service.DESCRIPTION}}</p>
+          <p><strong>Location Type: </strong>{{service.TYPE}}</p>
+          <p><strong>Keywords: </strong>{{service.KEYWORDS}}</p>
         </div>
       </li>
     </ul>
