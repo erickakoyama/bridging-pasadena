@@ -10,6 +10,10 @@ ol,ul {
   padding: 0;
 }
 
+input {
+  font-size: 16px;
+}
+
 .no-margin {
   margin: 0;
 }
