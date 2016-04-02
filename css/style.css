@@ -72,3 +72,17 @@ header {
     font-size: 1.3em;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .collapse {
+    display: block;
+  }
+  .well {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
