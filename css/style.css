@@ -68,6 +68,9 @@ header {
   body {
     font-size: 1em;
   }
+  h1 {
+    font-size: 3em;
+  }
   .service-item > h3 {
     font-size: 1.3em;
   }
