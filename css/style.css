@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: #ecedee;
 }
 
 ol,ul {
@@ -41,7 +42,7 @@ header {
 }
 
 .search-results {
-  background: #ecedee;
+  background: #fff;
   margin-top: 10px;
 }
 
@@ -56,11 +57,11 @@ header {
 
 .service-item {
   padding: 10px;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid #ecedee;
 }
 
 .pagination-container {
-  background: #fff;
+  background: #ecedee;
 }
 
 @media screen and (max-width: 768px) {
