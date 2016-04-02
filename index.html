@@ -63,18 +63,18 @@
     <h3>Results</h3>
     <ul>
       <li class="service-item" dir-paginate="service in services | filter:searchText | itemsPerPage:5">
-        <h3>{{ service.NAME }}</h3>
+        <h3>{{service.NAME}}</h3>
 
-        <a class="btn btn-default visible-xs hidden-md" role="button" data-toggle="collapse" href="#collapse-{{ service.NAME | removeSpaces }}" aria-expanded="false" aria-controls="collapse-{{ service.NAME | removeSpaces}}">
-          View Location Details
+        <a class="btn btn-default visible-xs hidden-md" role="button" data-toggle="collapse" href="#collapse-{{ service.NAME | removeSpaces }}" aria-expanded="false" aria-controls="collapse-{{ service.NAME | removeSpaces }}">
+          View location details
         </a>
         <div class="collapse" id="collapse-{{ service.NAME | removeSpaces }}">
           <div class="well">
-            <p><strong>Address: </strong>{{ service.ADDRESS }}</p>
-            <p><strong>Phone: </strong>{{ service.PHONE }}</p>
-            <p><strong>Hours: </strong>{{ service.HOURS }}</p>
-            <p><strong>Description: </strong>{{ service.DESCRIPTION }}</p>
-            <p><strong>Location Type: </strong>{{ service.TYPE }}</p>
+            <p><strong>Address: </strong>{{service.ADDRESS}}</p>
+            <p><strong>Phone: </strong>{{service.PHONE}}</p>
+            <p><strong>Hours: </strong>{{service.HOURS}}</p>
+            <p><strong>Description: </strong>{{service.DESCRIPTION}}</p>
+            <p><strong>Location Type: </strong>{{service.TYPE}}</p>
           </div>
         </div>
       </li>
