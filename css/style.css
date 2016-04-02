@@ -10,7 +10,8 @@ ol,ul {
   padding: 0;
 }
 
-.form-control {
+.form-control,
+input[type=text] {
   font-size: 16px;
 }
 
