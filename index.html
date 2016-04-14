@@ -20,34 +20,38 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="hidden-xs">
-
-  </header>
+  <header class="hidden-xs"></header>
   <nav class="navbar navbar-inverse">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Bridging Pasadena</a>
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Bridging Pasadena</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="index.html">Education</a></li>
+          <li><a href="index.html">Women Services</a></li>
+          <li><a href="index.html">Teen Services</a></li>
+          <li><a href="index.html">Housing and Services</a></li>
+          <li><a href="index.html">Food and Welfare Services</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="instructions container">
+    <div class="col-xs-10 col-xs-offset-1 text-center">
+      <p><em>Bridging Pasadena</em> provides the most comprehensive resource tool enabling you to find community organizations providing services or support matching your specific needs.</p>
+      <p><strong>HOW TO USE: </strong> There's no easier way to connect; Enter simple keywords or categories like shelter, food, clothing, transportation, health and more. Include as many specific keywords as possible.</p>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="index.html">Education</a></li>
-        <li><a href="index.html">Women Services</a></li>
-        <li><a href="index.html">Teen Services</a></li>
-        <li><a href="index.html">Housing and Services</a></li>
-        <li><a href="index.html">Food and Welfare Services</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+  </div>
   <div class="container" ng-controller="myController">
   <div class="search">
       <h1 class="text-center">Online Resource Directory</h1>
@@ -72,11 +76,15 @@
           <div class="well">
             <p><strong>Address: </strong>{{service.ADDRESS}}</p>
             <p><strong>Phone: </strong>{{service.PHONE}}</p>
+            <p><strong>Alternative Phone: </strong>{{service.ALTPHONE}}</p>
             <p><strong>Hours: </strong>{{service.HOURS}}</p>
-            <p><strong>Description: </strong>{{service.DESCRIPTION}}</p>
-            <p><strong>Support Services Requirements/Special Details: </strong>Special Requirements &amp; Details Placeholder</p>
-
-            <p><strong>Location Type: </strong>{{service.TYPE}}</p>
+            <p><strong>After Hours: </strong>{{service.AFTERHOURS}}</p>
+            <p><strong>Program Description: </strong>{{service.DESCRIPTION}}</p>
+            <p><strong>Extra Info: </strong>{{service.EXTRA}}</p>
+            <p><strong>Support Services Requirements/Special Details: </strong>{{service.REQUIREMENTS}}</p>
+            <p><strong>Location Type: </strong>{{service.LOCATION}}</p>
+            <p><strong>Other: </strong>{{service.OTHER}}</p>
+            <p><strong>Assigned To: </strong>Assigned to Placeholder</p>
           </div>
         </div>
       </li>

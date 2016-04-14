@@ -37,6 +37,13 @@ header {
   border-radius: 0;
 }
 
+.instructions {
+  padding: 10px;
+  background: yellow;
+  font-size: 1.3em;
+  font-weight: 200;
+}
+
 .search-input-group {
   width: 100%;
 }
