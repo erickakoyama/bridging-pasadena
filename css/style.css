@@ -86,6 +86,14 @@ header {
   .service-item > h3 {
     font-size: 1.3em;
   }
+  .navbar {
+    margin-bottom: 0;
+  }
+  .navbar-brand {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
