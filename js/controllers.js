@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp',['angularUtils.directives.dirPagination']);
+var myApp = angular.module('myApp',['angularUtils.directives.dirPagination', 'angular.filter']);
 
 myApp.controller('myController',function($scope, $http){
   $http.get('js/data.json').success(function(data){

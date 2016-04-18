@@ -5,7 +5,6 @@
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="lib/angular/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.js"></script>
   <script src="js/controllers.js"></script>
   <script src="lib/angular/dirPagination.js"></script>
   <!-- Latest compiled and minified CSS -->
@@ -50,7 +49,7 @@
   <div class="search-results">
     <h3>Results</h3>
     <ul>
-      <li class="service-item" dir-paginate="service in services | fuzzy: searchText | itemsPerPage:5">
+      <li class="service-item" dir-paginate="service in services | searchAllServices: modifySearchText()| itemsPerPage:5">
         <h3>{{service.NAME}}</h3>
 
         <a class="btn btn-default visible-xs hidden-md" role="button" data-toggle="collapse" href="#collapse-{{ service.NAME | removeSpaces }}" aria-expanded="false" aria-controls="collapse-{{ service.NAME | removeSpaces }}">
