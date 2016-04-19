@@ -31,9 +31,8 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div class="instructions container">
-    <div class="col-xs-10 col-xs-offset-1 text-center">
-      <p><em>Bridging Pasadena</em> provides the most comprehensive resource tool enabling you to find community organizations providing services or support matching your specific needs.</p>
-      <p><strong>HOW TO USE: </strong> There's no easier way to connect; Enter simple keywords or categories like housing, food, clothing, family, health and more.</p>
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+      <p><strong>Bridging Pasadena</strong> provides the most comprehensive resource tool enabling you to find community organizations providing services or support matching your specific needs.</p>
     </div>
   </div>
   <div class="container" ng-controller="myController">
@@ -58,16 +57,16 @@
         </a>
         <div class="collapse" id="collapse-{{ service.NAME | removeSpaces }}">
           <div class="well">
-            <p><strong>Address: </strong>{{service.ADDRESS}}</p>
-            <p><strong>Phone: </strong>{{service.PHONE}}</p>
-            <p><strong>Alternative Phone: </strong>{{service.ALTPHONE}}</p>
-            <p><strong>Hours: </strong>{{service.HOURS}}</p>
-            <p><strong>After Hours: </strong>{{service.AFTERHOURS}}</p>
-            <p><strong>Program Description: </strong>{{service.DESCRIPTION}}</p>
-            <p><strong>Extra Info: </strong>{{service.EXTRA}}</p>
-            <p><strong>Support Services Requirements/Special Details: </strong>{{service.REQUIREMENTS}}</p>
-            <p><strong>Location Type: </strong>{{service.LOCATION}}</p>
-            <p><strong>Other: </strong>{{service.OTHER}}</p>
+            <p ng-if="service.ADDRESS"><strong>Address: </strong>{{service.ADDRESS}}</p>
+            <p ng-if="service.PHONE"><strong>Phone: </strong>{{service.PHONE}}</p>
+            <p ng-if="service.ALTPHONE"><strong>Alternative Phone: </strong>{{service.ALTPHONE}}</p>
+            <p ng-if="service.HOURS"><strong>Hours: </strong>{{service.HOURS}}</p>
+            <p ng-if="service.AFTERHOURS"><strong>After Hours: </strong>{{service.AFTERHOURS}}</p>
+            <p ng-if="service.DESRIPTION"><strong>What We Do: </strong>{{service.DESCRIPTION}}</p>
+            <p ng-if="service.EXTRA"><strong>Extra Info: </strong>{{service.EXTRA}}</p>
+            <p ng-if="service.REQUIREMENTS"><strong>Support Services Requirements/Special Details: </strong>{{service.REQUIREMENTS}}</p>
+            <p ng-if="service.LOCATION"><strong>Location Type: </strong>{{service.LOCATION}}</p>
+            <p ng-if="service.OTHER"><strong>Other: </strong>{{service.OTHER}}</p>
             <p><strong>Assigned To: </strong>Assigned to Placeholder</p>
           </div>
         </div>
