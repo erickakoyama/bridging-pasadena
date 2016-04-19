@@ -41,6 +41,7 @@ header {
   padding: 10px;
   font-size: 1.3em;
   font-weight: 200;
+  background: yellow;
 }
 
 .search-input-group {
