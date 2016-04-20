@@ -38,7 +38,7 @@ header {
 }
 
 .instructions {
-  padding: 15px;
+  padding: 25px 35px;
   font-size: 1.3em;
   font-weight: 200;
   color: white;
@@ -117,6 +117,9 @@ header {
   .instructions {
     font-size: 1.4em;
     padding: 10px;
+  }
+  .alert-container {
+    background: #31B0D5;
   }
 }
 
