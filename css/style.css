@@ -38,11 +38,23 @@ header {
 }
 
 .instructions {
-  padding: 10px;
+  padding: 25px;
   font-size: 1.3em;
   font-weight: 200;
   color: white;
   background: #31B0D5;
+}
+
+.alert {
+  box-shadow: none;
+  text-shadow: none;
+  margin-bottom: 0;
+  border: none;
+}
+
+.close:focus, .close:hover {
+  color: white;
+  opacity: 1;
 }
 
 .search-input-group {
