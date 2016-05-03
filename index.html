@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="hidden-xs"></header>
+  <header class="hidden-xs">
+    <img src="img/header.jpg" alt="" width="100%" height="auto">
+  </header>
   <nav class="navbar navbar-inverse">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -81,7 +83,6 @@
             <p ng-if="service.CONTACTNAME"><strong>Contact Person(s): </strong>{{service.CONTACTNAME}}</p>
             <p ng-if="service.LOCATION"><strong>Location Type: </strong>{{service.LOCATION}}</p>
             <p ng-if="service.OTHER"><strong>Other: </strong>{{service.OTHER}}</p>
-            <p><strong>Assigned To: </strong>Assigned to Placeholder</p>
           </div>
         </div>
       </li>
